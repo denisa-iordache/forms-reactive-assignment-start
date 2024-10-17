@@ -17,7 +17,7 @@ export class AppComponent implements OnInit{
       // 'name': new FormControl(null, [Validators.required, this.forbiddenNames.bind(this)]),
       'name': new FormControl(null, Validators.required, this.forbiddenNames),
       'mail': new FormControl(null, [Validators.required, Validators.email]),
-      'status': new FormControl('male')
+      'status': new FormControl('Stable')
     });
   }
 
